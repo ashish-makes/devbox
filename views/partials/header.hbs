@@ -1,0 +1,30 @@
+<header>
+    <nav style="align-items:center" class="container">
+        <a href="/">
+                    <svg id="logo-72" width="10%" height="10%" viewBox="0 0 53 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.2997 0L52.0461 28.6301V44H38.6311V34.1553L17.7522 13.3607L13.415 13.3607L13.415 44H0L0 0L23.2997 0ZM38.6311 15.2694V0L52.0461 0V15.2694L38.6311 15.2694Z" class="ccustom" fill="#fff"></path>
+        </svg>
+        </a>
+        <ul style="justify-content: center; align-items: center;">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/resources">Resources</a></li>
+            {{!-- Show "Login" if user is not logged in, else show "Logout" --}}
+            {{#if user}}
+            <li>
+                <form style="font-size: small" action="/auth/logout" method="GET" style="display: inline;">
+                    <button class="button" type="submit">
+                        Logout
+        <i class="iconoir-log-out"></i>
+
+                        </button>
+                </form>
+            </li>
+            {{else}}
+            <li><a style="font-size: small" href="/auth/login" class="button" style="padding: .5rem;">
+        <i class="iconoir-log-in"></i>
+            Login</a></li>
+            {{/if}}
+        </ul>
+    </nav>
+</header>

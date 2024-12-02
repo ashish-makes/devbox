@@ -1,0 +1,24 @@
+<section class="home-hero">
+    <div class="container">
+        <h2>All resources a developer needs at one place</h2>
+        <p>Save time and energy with a streamlined library of essential tools and assets. Find everything from stunning icons to powerful APIs, all categorized for your convenience.</p>
+        <a href="/resources" class="button">
+            Explore all resources
+            <i class="iconoir-arrow-up-right"></i>
+        </a>
+    </div>
+</section>
+<section class="resources">
+    <div class="container resources-content">
+        {{#each resources}}
+        <div class="card">
+            <span class="card-category">{{this.category}}</span>
+            <p style="font-weight: 800;" class="card-title">{{this.name}}</p>
+            <p style="color: #8c8c8c;" class="card-description">{{this.description}}</p>
+            <a style="" class="card-link button" href="{{this.link}}" target="_blank">
+                <i class="iconoir-arrow-up-right"></i>
+            </a>
+        </div>
+        {{/each}}
+    </div>
+</section>

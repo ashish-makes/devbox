@@ -1,0 +1,30 @@
+<section class="form-container">
+    <form action="/auth/signup" method="POST">
+        <div style="text-align: center; margin-bottom: .5rem">
+            <h1 style="display: inline-flex; justify-content: center; align-items:center; gap: .5rem">
+                <i class="iconoir-user"></i>
+                Create your account
+            </h1>
+        </div>
+        <div>
+            <input placeholder="username" type="text" id="username" name="username" required>
+        </div>
+        <div>
+            <input placeholder="password" type="password" id="password" name="password" required>
+        </div>
+        <button style="margin-top: .5rem; width: 100%; justify-content:start; text-align: center" class="button" type="submit">
+            <i class="iconoir-user"></i>
+            Sign up for an account
+        </button>
+        <br>
+        <!-- GitHub Signup Button -->
+        <a href="/auth/github">
+            <button style="margin-top: .5rem; width: 100%; justify-content:start; text-align: center;" class="button" type="button">
+                <i class="iconoir-github-circle"></i>
+                Sign up with GitHub
+            </button>
+        </a>
+
+        <p style="color: #8c8c8c; margin: .5rem 0">Already have an account? <a style="color: #8c8c8c" href="/auth/login">Login here</a></p>
+    </form>
+</section>

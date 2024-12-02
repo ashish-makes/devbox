@@ -1,0 +1,37 @@
+<section class="resources">
+    <h1 style="font-size: 3rem; margin-bottom: 1rem;" class="container">Browse Resources</h1>
+    <div class="container resources-content">
+        {{#if resources.length}}
+            {{#each resources}}
+            <div class="card">
+                                        <span class="card-category">
+                <a href="/resources/{{this.category}}">
+                    {{this.category}}
+                </a>
+            </span>
+                <p style="font-weight: 800;" class="card-title">{{this.name}}</p>
+                <p style="color: #8c8c8c;" class="card-description">{{this.description}}</p>
+                <a class="card-link button" href="{{this.link}}" target="_blank">
+                    <i class="iconoir-arrow-up-right"></i>
+                </a>
+
+                <!-- Show Edit and Delete buttons only for Admins -->
+                {{#if (eq ../user.role 'admin')}}
+                <div style="display: inline-flex; align-items: center; gap: 1rem; padding: 0; border: none;" class="edit-del">
+                    <a class="card-link button" href="/edit-resource/{{this._id}}">
+                        <i class="iconoir-edit-pencil"></i>
+                    </a>
+                    <form action="/resources/delete/{{this._id}}" method="POST" style="display: inline;">
+                        <button class="card-link button" type="submit">
+                            <i class="iconoir-bin-minus-in"></i>
+                        </button>
+                    </form>
+                </div>
+                {{/if}}
+            </div>
+            {{/each}}
+        {{else}}
+        <p class="container" style="text-align: center; color: #8c8c8c; font-size: 1.2rem;">No resources found in this category.</p>
+        {{/if}}
+    </div>
+</section>

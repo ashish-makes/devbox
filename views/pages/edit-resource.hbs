@@ -1,0 +1,13 @@
+<section class="container">
+    <h1 style="margin-bottom: 1rem;">Edit resource</h1>
+<form action="/edit-resource/{{resource._id}}" method="POST">
+    <label>Name: <input type="text" name="name" value="{{resource.name}}" required></label><br>
+    <label>Description: <textarea rows="6" style="margin-top: .5rem;" name="description" required>{{resource.description}}</textarea></label><br>
+    <label>Link: <input style="margin-top: .5rem;" type="url" name="link" value="{{resource.link}}" required></label><br>
+    <label>Category: <input style="margin-top: .5rem;" type="text" name="category" value="{{resource.category}}" required></label><br>
+    <button style="margin-top: .5rem;" class="button" type="submit">
+            <i class="iconoir-edit-pencil"></i>
+        Update Resource
+        </button>
+</form>
+</section>

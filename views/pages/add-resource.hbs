@@ -1,0 +1,21 @@
+<section class="container">
+    <h1 style="margin-bottom: 1rem;">Add a New Resource</h1>
+    <form action="/add-resource" method="POST">
+        <label>Name: <input type="text" name="name" placeholder="Resource Name" required></label><br>
+        <label>Description: <textarea rows="6" style="margin-top: .5rem;" name="description" placeholder="Resource Description" required></textarea></label><br>
+        <label>Link: <input style="margin-top: .5rem;" type="url" name="link" placeholder="Resource Link (URL)" required></label><br>
+        <label>Category: 
+            <select style="margin-top: .5rem; width: 100%;" name="category" required>
+                <option value="" disabled selected>Select a category</option>
+                <option value="Icons">Icons</option>
+                <option value="Illustrations">Illustrations</option>
+                <option value="Tools">Tools</option>
+                <option value="Frameworks">Frameworks</option>
+            </select>
+        </label><br>
+        <button style="margin-top: .5rem;" class="button" type="submit">
+            <i class="iconoir-upload"></i>
+            Add Resource
+        </button>
+    </form>
+</section>
