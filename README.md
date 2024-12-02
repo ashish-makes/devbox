@@ -1,4 +1,4 @@
-# 🌐 Resource Management System
+# 🌐 DevBox
 
 A web application designed to manage resources categorized by different topics. The app allows users to browse resources by category, and admins can add, edit, and delete resources. This system is built with Node.js, Express, Handlebars, and MongoDB.
 
