@@ -119,6 +119,4 @@ const authRouter = require('./routes/auth');
 app.use('/', indexRouter);
 app.use('/auth', authRouter); // Add authentication routes
 
-// Port Configuration
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
+module.exports = app;
