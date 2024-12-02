@@ -1,4 +1,4 @@
-# 🌐 Resource Management System
+# 🌐 DevBox
 
 A web application designed to manage resources categorized by different topics. The app allows users to browse resources by category, and admins can add, edit, and delete resources. This system is built with Node.js, Express, Handlebars, and MongoDB.
 
@@ -123,5 +123,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Handlebars](https://handlebarsjs.com/) for dynamic templating.
 - [Express](https://expressjs.com/) for the backend framework.
 - [MongoDB](https://www.mongodb.com/) for database management.
-- [Bootstrap](https://getbootstrap.com/) (if used) for responsive design and CSS framework.
-
